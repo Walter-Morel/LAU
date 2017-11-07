@@ -1,0 +1,27 @@
+.nav{
+    width: auto;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link{
+    font-size: 20px;
+    display: block;
+    padding: 20px;
+    background: none;
+    text-decoration: none;
+    color:#fff;
+}
+.menu__link:hover{
+    background: #FFFFFF;
+    color:#FBA919;
+}
+.select{
+    background: #0E21C7;
+    color:#FFF;
+
+}

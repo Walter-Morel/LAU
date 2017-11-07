@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Saira+Extra+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+*{
+    box-sizing: border-box;
+}
+img{
+    display:block;
+    max-width: 100%;
+}
+body{
+    margin: 0;
+    background: rgb(206, 187, 187);
+    height: 3100px;
+    
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+.slogan-logo{
+    font-size: 20px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+.contenedor{
+    margin: auto;
+    width: 1310px;
+}
+
+
+
+
+    
+
+
+
+
+
+
