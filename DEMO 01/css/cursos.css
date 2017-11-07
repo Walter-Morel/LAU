@@ -1,0 +1,39 @@
+.cursos{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.section_titulo{
+   
+   text-align: center;
+   display: flex;
+    margin: 30px 0;
+    font-size: 40px;
+    color: #FBA919;
+    margin-bottom: 30px;
+}
+.cursos_columna{
+    
+    
+    position: relative;
+    margin-bottom: 10px;
+    padding: auto;
+    margin-top: 200px;
+}
+.cursos_descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:#fff;
+    background: rgba(0,0,0,0.4);
+    width: 60%;
+    height: 98%;
+}
+.cursos_titulo{
+    font-size: 30px;
+    margin: 5px 0;
+}
