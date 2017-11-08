@@ -1,0 +1,13 @@
+.info{
+    display:flex;
+    justify-content: space-between;
+    margin-top: -60px;
+    
+}
+.info_culumna{
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 31%;
+}
