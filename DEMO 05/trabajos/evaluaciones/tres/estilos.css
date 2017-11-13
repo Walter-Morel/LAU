@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("img/fondo.jpg.jpg");
+    /* background-size: 100vw 100vh; */
+    /* background-repeat: no-repeat; */
+}
+
+.h1{
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.formulario{
+    color:#fff;
+    width: 98%;
+    max-width: 450px;
+    margin: auto;
+    background: rgba(37, 38, 43, 0.9);
+    border-radius: 7px;
+}
+.form-titulo{
+    width: 100%;
+    background: rgb(255, 196, 0);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+
+}
+.form-h1{
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+.contenedor-input{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.input-btn{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    margin-bottom: 15px;
+}
+.input-file{
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    margin-bottom: 15px;
+}
+.chek{
+    width: 100%;
+    padding: 10px 30px;
+    margin-bottom: 9px;
+}
+.chek-texts{
+    text-align: center;
+}

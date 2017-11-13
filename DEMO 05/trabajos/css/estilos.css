@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+/* @import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed'); */
+*{
+    box-sizing: border-box;
+}
+img{
+    display:block;
+    max-width: 100%;
+}
+body{
+    margin: 0;
+    background: rgb(26, 25, 25);
+    height: 3100px;
+    
+    font-family: 'Ubuntu', sans-serif;
+}
+.slogan-logo{
+    font-size: 30px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 3px;
+}
+.contenedor{
+    margin: auto;
+    margin-bottom: 200px;
+    width: 1310px;
+}
+
+
+
+
+    
+
+
+
+
+
+

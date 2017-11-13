@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="registrar.php" method="post" class="formulario">
+            <h1 class="form-h1">Formulario de registro</h1>
+        <div class="contenedor-input">
+            <h2 class="form-titulo">Crea una cuenta</h2>
+            <input type="text" name="nombre" placeholder="Nombre" class="input-btn">
+            <input type="text" name="apellidos" placeholder="Apellidos" class="input-btn">
+            <input type="email" name="correo" placeholder="Correo" class="input-btn">
+            <input type="password" name="clave" placeholder="Clave" class="input-btn">
+            <input type="file" name="cargar" placeholder="Cargar" class="input-file">
+            <input type="submit" value="enviar" placeholder="Enviar" class="input-btn">
+            <input type="reset" name="resetar" placeholder="Resetar" class="input-btn">
+        <div class="contenedor-chek">
+            <div class="chek">
+            <h2 class="chek-texts">Aceptas nuestras condiciones</h2>
+            <label for="">Si</label>
+            <input type="checkbox" class="si" class="input-btn">
+            </div>
+
+            <div class="chek">
+            <label for="">No</label>
+            <input type="checkbox" class="no" class="input-btn">
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>

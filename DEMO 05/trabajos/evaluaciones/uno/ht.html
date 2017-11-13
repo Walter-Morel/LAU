@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="icon" type="icon-cube"> -->
+    <link rel="stylesheet" href="css/fontello.css">
+    <title>Proyecto HTML</title>
+    
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* menu */
+#menu-bar{
+    display: none;
+}
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+.menu{
+    position: absolute;
+    top:50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51,51,51,0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.menu a:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+
+}
+
+/* fin del menu */
+body{
+    font-family: 'Asap Condensed', sans-serif;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: #0F0F0F;
+    color:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+h1{
+    float: left;
+}
+header .contenedor{
+    display: table;
+}
+section{
+    width: 100;
+    margin-bottom: 25px;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #000;
+    justify-content: center;
+    padding-bottom: 25px;
+    color: #fff;
+}
+.copy{
+    font-size: 20px;
+}
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.sociales a{
+    color: #333;
+    text-decoration: none;
+
+}
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+#banner img{
+    width: 100%;
+    height: 100;
+    filter: blur(4px)
+}
+#banner .contenedor{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+}
+#banner h2{
+    font-size: 28px;
+}
+#banner a{
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    border:3px solid #fff;
+}
+#banner a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+#banner2 {
+    margin-top: 50px;
+    position: relative;
+
+}
+#banner2 img{
+    width: 100%;
+    height: 100;
+    filter: blur(6px)
+}
+#banner2 .contenedor{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    
+}
+#banner2 h2{
+    font-size: 28px;
+}
+#banner2 a{
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    border:3px solid #fff;
+    
+}
+#banner2 a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#articulos{
+    background: #4B3030;
+}
+article{
+    margin-top: 50px;
+    position: relative;
+}
+
+
+</style>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-cubes">  Proyecto HTML</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="http://www.escuelaginer.com/moodle/" class="icon-joomla" target="_blank">Moodle Escuela Giner</a>
+                <a href="https://codepen.io/" class="icon-codeopen" target="_blank">Code pen</a>
+                <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <br>
+            <a name="inicio"></a>
+            <h2>Introducción - HTML</h2><br><hr>
+            <p><b>HTML</b> es la sigla de HiperText Markup Language (Lenguaje de Marcación de Hipertexto) 
+            es un lenguaje es se utiliza comúnmente
+             para establecer la estructura
+             y contenido de un sitio web, tanto de texto  objetos e imágenes.
+            Los archivos desarrollados en HTML usan la extensión .htm o .html.</p><br><hr>
+            <br>
+
+            <p>HTML es el lenguaje con el que se define el contenido de las páginas web. Básicamente se trata de un conjunto de etiquetas que sirven para definir el texto y otros elementos que compondrán una página web, como imágenes, listas, vídeos, etc.
+                    
+                    El HTML se creó en un principio con objetivos divulgativos de información con texto y algunas imágenes. No se pensó que llegara a ser utilizado para crear área de ocio y consulta con carácter multimedia (lo que es actualmente la web), de modo que, el HTML se creó sin dar respuesta a todos los posibles usos que se le iba a dar y a todos los colectivos de gente que lo utilizarían en un futuro. Sin embargo, pese a esta deficiente planificación, si que se han ido incorporando modificaciones con el tiempo, estos son los estándares del HTML. Numerosos estándares se han presentado ya. El HTML 4.01 es el último estándar a febrero de 2001. Actualización a mayo de 2005, en estos momentos está apunto de presentarse la versión 5 de HTML, de la que ya se tiene un borrador casi definitivo.
+                    
+                    El HTML es un lenguaje de marcación de elementos para la creación de documentos hipertexto, muy fácil de aprender, lo que permite que cualquier persona, aunque no haya programado en la vida, pueda enfrentarse a la tarea de crear una web. HTML es fácil y pronto podremos dominar el lenguaje. Más adelante se conseguirán los resultados profesionales gracias a nuestras capacidades para el diseño y nuestra vena artista, así como a la incorporación de otros lenguajes para definir el formato con el que se tienen que presentar las webs, como CSS.
+                    
+                    Una vez conocemos el concepto de HTML os vamos a adelantar algunas cosas más. Este lenguaje se escribe en un documento de texto, por eso necesitamos un editor de textos para escribir una página web. Así pues, el archivo donde está contenido el código HTML es un archivo de texto, con una peculiaridad, que tiene extensión .html o .htm (es indiferente cuál utilizar). De modo que cuando programemos en HTML lo haremos con un editor de textos, lo más sencillo posible y guardaremos nuestros trabajos con extensión .html, por ejemplo mipagina.html
+                    
+                    Por adelantar un poco cómo se utiliza el HTML os diremos que el lenguaje consta de etiquetas que tienen esta forma  o <P>. Cada etiqueta significa una cosa, por ejemplo  significa que se escriba en negrita (bold) o <P> significa un párrafo, <A> es un enlace, etc. Casi todas las etiquetas tienen su correspondiente etiqueta de cierre, que indica que a partir de ese punto no debe de afectar la etiqueta. Por ejemplo  se utiliza para indicar que se deje de escribir en negrita. Así que el HTML no es más que una serie de etiquetas que se utilizan para definir el contenido del documento y algún estilo básico. </p>
+            <br>
+            <h2>Estructura HTML</h2><br>
+            
+            <img src="img/estructura-HTML.jpg" alt="">
+            <a href="#inicio">Volver a la Introducción</a>    
+            
+
+            
+
+
+        </article>
+        
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <p class="copy">Walter Morel &copy; 2017</p>
+        </div>
+    </footer>
+</body>
+</html>

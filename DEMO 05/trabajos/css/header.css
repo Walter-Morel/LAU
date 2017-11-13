@@ -1,0 +1,12 @@
+.logo{
+    color:rgb(255, 255, 255);
+}
+
+.header{
+    height: 60px;
+    display: flex;
+}
+.header .contenedor{
+    display:flex;
+    justify-content: space-between;
+}
