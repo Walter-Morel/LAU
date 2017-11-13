@@ -7,9 +7,10 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    background: rgb(26, 25, 25);
+    background: #5c5c8a;
 }
 header{
+    float: left;
     width: 100%;
     height: 160spx;
     background: #333;

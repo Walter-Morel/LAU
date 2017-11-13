@@ -9,7 +9,7 @@
     margin: 0;
 }
 .menu__link{
-    font-size: 10px;
+    font-size: 20px;
     display: block;
     padding: 20px;
     background: none;
@@ -21,7 +21,7 @@
     color:#FBA919;
 }
 .select{
-    background: #FBA919;
+    background: #0E21C7;
     color:#FFF;
 
 }

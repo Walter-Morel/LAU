@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        min-height: 100vh;
+        background-image: url(background.jpg);
+        background-size: 100vw 100vh;
+        
+    }
+    form{
+        margin: auto;
+        width: 40%;
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.4);
+        padding: 30px;
+        border: 1px solid rgba(0,0,0,0.2);
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    
+    input, select{
+        display: block;
+        padding: 10px;
+        width: 100%;
+        margin: 30px 0;
+        font-size: 15px;
+        
+    }
+    input[type="submit"], input[type="reset"]{
+        background: linear-gradient(#FFDA63, #FFB940);
+        cursor: pointer;
+    }
+    input[type="submit"]:active{
+        background: linear-gradient(#FFB940, #FFDA63);
+    }
+    input[type="reset"]:active{
+        background: linear-gradient(#FFB940, #FFDA63);
+    }
+    input[type="checkbox"]{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 30px 0;
+    }
+    
+    input[type="file"]{
+        background: #fff;
+    }
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .container input {
+        position: absolute;
+        opacity: 0;
+    }
+    
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+    
+   
+    .container:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    
+   
+    .container input:checked ~ .checkmark {
+        background-color: #FFE70B;
+    }
+    
+   
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+   
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    
+    .container .checkmark:after {
+         top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+    }
+    h3{
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .control{
+        display: flex;
+    }
+    .checkbox-label{
+        display: flex;
+        text-align: center;
+        width: 100px;
+        padding: 10px;
+    }
+    
+    
+    
+    </style>
+    <body>
+        <form action="mailto:walter-morel@hotmail.com" method="GET">
+            <h2>Formulario</h2>
+            <input type="text" placeholder="Nombre" required title="Escriba el nombre aquí">
+            <input type="text" placeholder="Dirección" required title="Escriba la dirección">
+            <input type="text" placeholder="Teléfono" required title="Escriba el teléfono">
+            <input type="number" placeholder="Edad" required title="Escriba su edad, solo admite caracter numérico">
+            <input type="password" placeholder="Contraseña" required title="Escriba su contraseña">
+            <select name="" id="sexo">
+                <option value=""></option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="otro">Travesti</option>
+            </select>
+            <input type="file" name="subir">
+            <input type="submit" value="Enviar" required title="Enviar todo lo que se escribio">          
+            <input type="reset" value="Restablecer todo" required title="Borrar todo">
+
+            <div class="control">
+                <div class="grid-100 row-checkbox">
+                    <label class="checkbox-label">
+                        <input id="edad" name="edad" type="checkbox" name="edad" />
+                        Soy mayor de <a href="mayor-edad.php">12 años</a>.
+                    </label>
+                </div>
+            </div>
+
+            
+            
+        </form>
+    </body>
+</html>

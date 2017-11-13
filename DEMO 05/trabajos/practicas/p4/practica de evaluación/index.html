@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="icon" type="icon-cube"> -->
+    <link rel="stylesheet" href="css/fontello.css">
+    
+    <title>Proyecto HTML</title>
+    
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* menu */
+#menu-bar{
+    display: none;
+}
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+.menu{
+    position: absolute;
+    top:50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51,51,51,0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.menu a:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+
+}
+
+/* fin del menu */
+body{
+    font-family: 'Asap Condensed', sans-serif;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: #0F0F0F;
+    color:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+h1{
+    float: left;
+}
+header .contenedor{
+    display: table;
+}
+section{
+    width: 100;
+    margin-bottom: 25px;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #000;
+    justify-content: center;
+    padding-bottom: 25px;
+    color: #fff;
+}
+.copy{
+    font-size: 20px;
+}
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.sociales a{
+    color: #333;
+    text-decoration: none;
+
+}
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+#banner img{
+    width: 100%;
+    height: 100;
+    filter: blur(4px)
+}
+#banner .contenedor{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+}
+#banner h2{
+    font-size: 28px;
+}
+#banner a{
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    border:3px solid #fff;
+}
+#banner a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+#banner2 {
+    margin-top: 50px;
+    position: relative;
+
+}
+#banner2 img{
+    width: 100%;
+    height: 100;
+    filter: blur(6px)
+}
+#banner2 .contenedor{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    
+}
+#banner2 h2{
+    font-size: 28px;
+}
+#banner2 a{
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    border:3px solid #fff;
+    
+}
+#banner2 a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+</style>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-cubes" > Proyecto HTML</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="http://www.escuelaginer.com/moodle/" class="icon-joomla" target="_blank">Moodle Escuela Giner</a>
+                <a href="https://codepen.io/" class="icon-codeopen" target="_blank">Code pen</a>
+                <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="info">
+
+
+
+        </section>
+        <section id="banner">
+            <img src="img/banner.jpg" alt="">
+            <div class="contenedor">
+                    <h2>Practicas HTML</h2>
+                    <a href="ht.html">Entrar</a>
+            </div>
+        </section>
+
+
+        <section id="banner2">
+                <img src="img/banner.jpg" alt="">
+                <div class="contenedor">
+                        <h2>Practicas CSS</h2>
+                        <a href="cs.html">Entrar</a>
+                </div>
+            </section>
+        
+    </main>
+   
+    <footer>
+        <div class="contenedor-footer">
+            <p class="copy">Walter Morel &copy; 2017</p>
+        </div>
+    </footer>
+</body>
+</html>

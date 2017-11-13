@@ -1,0 +1,12 @@
+.footer{
+    background: #333;
+    color:#FFFFFF;
+    padding: 40px;
+
+}
+.copy{
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
